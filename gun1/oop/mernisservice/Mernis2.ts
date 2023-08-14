@@ -6,6 +6,7 @@ export class Mernis2 implements IMernisService{
         console.log("Mernis 2 çalıştı");
     }
     CheckRegisterService(name: string): boolean {
+        // Mernis2 servisi bağlantı kodları
         return true;
     }
 

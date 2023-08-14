@@ -1,7 +1,7 @@
 import { IMernisService } from "./IMernisService";
 import { Mernis1 } from "./Mernis1";
 
-export class Context{
+export class MernisContext{
     
     private _service : IMernisService;
     /**

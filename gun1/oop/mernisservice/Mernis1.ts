@@ -10,6 +10,7 @@ export class Mernis1 implements IMernisService{
     }
 
     CheckRegisterService(name: string): boolean {
+        // Mernis1 servis bağlantı kodları
         return true;
     }
 
