@@ -4,6 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import LoginPanel from "../shared/login";
 import { useState } from "react";
 import Post from "../shared/post";
+import ContactForm from "./contact-form";
 
 const TabMain = () => {
   const [formStatus, setFormStatus] = useState<boolean>(false);
@@ -13,7 +14,7 @@ const TabMain = () => {
     setFormStatus(!formStatus);
   };
 
-  const onTab_Change = (key) => {
+  const onTab_Change = (key : string|null) => {
     setPostStatus(key==="profile");
   };
 
@@ -24,7 +25,7 @@ const TabMain = () => {
       className="mb-3"
     >
       <Tab eventKey="home" title="Home">
-        <LoginPanel password="deneme" email="deneme@deneme.com" status={true} />
+        <LoginPanel password="deneme" email="deneme@deneme.com" status={formStatus} />
         <Button variant="primary" onClick={btnEnableDisable_Click}>
           Enable / Disable Form
         </Button>
@@ -33,8 +34,7 @@ const TabMain = () => {
         {postStatus ? <Post /> : ""}
       </Tab>
       <Tab eventKey="contact" title="Contact">
-        Tab content for Contact
-        <Button variant="danger">My Danger</Button>
+        <ContactForm email="iii@iii.com" name="iiii" surname="iiii" phone="iiii"/>
       </Tab>
     </Tabs>
   );
