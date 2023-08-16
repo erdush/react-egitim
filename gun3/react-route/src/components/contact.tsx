@@ -1,18 +1,11 @@
 import { useEffect } from "react";
 
 function Contact() {
-    console.log();
+  console.log();
 
+  useEffect(() => {}, []);
 
-     useEffect(() => {
-        
-      },[]);
-    
-  
-    return (
-
-    
-
+  return (
     <div>
       <h1>İletişim</h1>
       <div>İletişim sayfası. İçerik eklenecek.</div>

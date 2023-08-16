@@ -2,7 +2,7 @@ function Home() {
   return (
     <div>
       <h2>Ana Sayfa</h2>
-      <div>Ana sayfa bu bölümde olacaktır.</div>
+      <div>Ana sayfa yazısı.</div>
     </div>
   );
 }
