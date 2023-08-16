@@ -17,8 +17,7 @@ const ContactForm = () => {
     setFormModel((values) => ({ ...values, [name]: value }));
   };
 
-  const form_Submit = (e: FormEvent<HTMLFormElement> | undefined) => {
-    if (e === undefined) return;
+  const form_Submit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formModel);
   };
