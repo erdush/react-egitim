@@ -5,6 +5,7 @@ import Contact from "./components/contact";
 import Users from "./components/users";
 import Menu from "./components/menu";
 import Bidi from "./components/bidi";
+import UserDetail from "./components/user-detail";
 
 function App() {
   return (
@@ -14,8 +15,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/users" element={<Users  />}>
-          <Route path=":userId" element={<Users  />} />
+          <Route path=":userId" element={<Users />} />
         </Route>
+        <Route path="/userdetail" element={<UserDetail />}>
+          <Route path=":userId" element={<UserDetail  />} />
+        </Route>
+
       </Routes>
       
       <Menu />
